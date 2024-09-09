@@ -1,0 +1,109 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f3e8e4;
+    background-image: url('https://i.pinimg.com/564x/62/d7/c1/62d7c1f2f309dd2cbfc84b869340ce96.jpg'); /* Substitua 'background.jpg' pelo nome da sua imagem */
+    background-size: cover; /* Faz a imagem de fundo cobrir toda a tela */
+    background-position: center; /* Centraliza a imagem de fundo */
+    color: #ffffff;
+    line-height: 1.6;
+}
+
+
+.header {
+    background-color: #6d4c41;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+.header h1 {
+    font-size: 2.5rem;
+}
+
+.header p {
+    font-size: 1.2rem;
+    margin-top: 5px;
+}
+
+.highlight {
+    background: url('img/cafe-background.jpg') no-repeat center center/cover;
+    color: #fff;
+    text-align: center;
+    padding: 60px 20px;
+}
+
+.highlight .content {
+    background: rgba(109, 76, 65, 0.8);
+    padding: 20px;
+    border-radius: 10px;
+    display: inline-block;
+}
+
+.menu {
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.menu h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.menu ul {
+    list-style: none;
+    padding: 0;
+}
+
+.menu li {
+    font-size: 1.2rem;
+    margin: 10px 0;
+}
+
+.gallery {
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.gallery h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.gallery .images {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.gallery img {
+    width: 300px;
+    height: auto;
+    border-radius: 10px;
+}
+
+.location, .contact {
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.location h2, .contact h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.footer {
+    background-color: #6d4c41;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+

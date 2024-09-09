@@ -1,0 +1,159 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    color: #333;
+    background-color: #84a5ec;
+    line-height: 1.6;
+}
+
+.header {
+    position: relative;
+    background-image: url('https://placar.com.br/wp-content/uploads/2021/09/neymar-2.jpg'); /* Substitua pelo caminho correto da sua imagem */
+    background-size: cover;
+    background-position: center;
+    height: 120vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.4);
+}
+
+.header-content {
+    position: relative;
+    z-index: 1;
+}
+
+.header h1 {
+    font-size: 4rem;
+}
+
+.header p {
+    font-size: 1.5rem;
+    margin-top: 10px;
+}
+
+.classes, .testimonials, .about, .contact {
+    padding: 40px 20px;
+    text-align: center;
+    position: relative;
+    max-width: 900px;
+    margin: 20px auto;
+    background-color: rgba(255, 255, 255, 0.8); /* Fundo semi-transparente */
+    border-radius: 8px;
+    border-left: 5px solid #6b8e23; /* Linha de destaque à esquerda */
+}
+
+h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #6b8e23; /* Verde suave */
+    position: relative;
+}
+
+h2::after {
+    content: "";
+    position: absolute;
+    left: -30px; /* Ajusta a posição da linha de destaque */
+    top: 0;
+    bottom: 0;
+    width: 2px;
+    background-color: #6b8e23; /* Cor da linha vertical */
+}
+
+.class-list {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.class {
+    max-width: 300px;
+    text-align: center;
+}
+
+.class img {
+    width: 80%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+.testimonial-list {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.testimonial {
+    max-width: 300px;
+    background-color: #e6f2e6;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    border-left: 5px solid #6b8e23; /* Linha de destaque */
+}
+
+.testimonial p {
+    font-size: 1.1rem;
+    font-style: italic;
+}
+
+.testimonial h4 {
+    margin-top: 10px;
+    font-size: 1rem;
+    color: #333;
+}
+
+.contact form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+.contact input, .contact textarea {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+.contact button {
+    padding: 10px;
+    background-color: #6b8e23; /* Verde suave */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+.contact button:hover {
+    background-color: #5b7a1b; /* Tom mais escuro do verde */
+}
+
+.footer {
+    background-color: #f0f0f0;
+    color: #666;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: 20px;
+}

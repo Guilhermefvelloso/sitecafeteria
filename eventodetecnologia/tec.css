@@ -1,0 +1,122 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    background-image: url('https://i.pinimg.com/236x/78/bc/f1/78bcf15761b0bf9a9af5b116572c34c1.jpg'); /* Substitua 'techfest-background.jpg' pelo nome da sua imagem */
+    background-size: cover; /* Faz a imagem de fundo cobrir toda a tela */
+    background-position: center; /* Centraliza a imagem de fundo */
+    background-attachment: fixed; /* Mantém a imagem de fundo fixa ao rolar a página */
+    color: #333;
+    line-height: 1.6;
+}
+
+.header {
+    background-color: rgba(34, 34, 34, 0.9); /* Cor semi-transparente para destacar o cabeçalho na imagem de fundo */
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+.header h1 {
+    font-size: 3rem;
+}
+
+.header p {
+    font-size: 1.2rem;
+    margin-top: 5px;
+    color: #0af;
+}
+
+.speakers, .schedule, .registration, .venue {
+    padding: 40px 20px;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.8); /* Fundo semi-transparente para seções */
+    margin: 20px auto;
+    max-width: 900px; /* Largura máxima para centralizar as seções */
+    border-radius: 8px;
+}
+
+.speakers h2, .schedule h2, .registration h2, .venue h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #0af; /* Azul vibrante */
+}
+
+.speaker-list {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.speaker {
+    max-width: 200px;
+    text-align: center;
+}
+
+.speaker img {
+    width: 100%;
+    height: auto;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+.timeline {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    text-align: left;
+    max-width: 600px;
+    margin: 0 auto;
+    position: relative; /* Define o contexto de posição para a linha vertical */
+    padding-left: 40px; /* Espaço para a linha vertical */
+}
+
+.timeline::before {
+    content: "";
+    position: absolute;
+    left: 20px; /* Posição da linha vertical */
+    top: 0;
+    bottom: 0;
+    width: 2px;
+    background-color: #0af; /* Cor da linha vertical */
+}
+
+.event h3 {
+    font-size: 1.5rem;
+    color: #333;
+}
+
+.event p {
+    font-size: 1.1rem;
+}
+
+.register-button {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 15px 30px;
+    background-color: #0af; /* Azul vibrante */
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.2rem;
+    border-radius: 5px;
+}
+
+.register-button:hover {
+    background-color: #099;
+}
+
+.footer {
+    background-color: rgba(34, 34, 34, 0.9);
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
